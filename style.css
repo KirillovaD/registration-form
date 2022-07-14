@@ -1,0 +1,23 @@
+.content{
+  max-width: 1440px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.main-image{
+  background-image: url('assets/images/FACES-PATTERN.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.main {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 0 50px;
+
+}
+.input {
+  display: block;
+}
