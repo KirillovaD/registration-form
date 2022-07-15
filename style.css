@@ -1,23 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
 .content{
-  max-width: 1440px;
+  
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
 }
 .main-image{
-  background-image: url('assets/images/FACES-PATTERN.jpg');
+  background-image: url('assets/images/image-1.svg');
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .main {
-  width: 50%;
-  margin: auto;
+
+  margin: 4em auto;
   display: flex;
   flex-direction: column;
-  padding: 0 50px;
+  
 
+}
+.social-icons{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding:20px 0;
+}
+
+.social-icons img{
+  width: 30px;
+  height: 30px;
 }
 .input {
   display: block;
+}
+
+.input:not(.checkbox) {
+  border-radius: 5px;
+  border: 1px solid #dfdbf2;
+  width: 300px;
+  height: 30px;
+  margin: 15px 0;
+  padding: 5px;
+
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+ 
+}
+.input:focus{
+  border: 1px solid #7274fd;
+
+  font-size: 13px;
+  color: #353535;
+
+}
+#country{
+  border-radius: 5px;
+  border: 1px solid #dfdbf2;
+  width: 312px;
+  height: 40px;
+  padding: 5px;
+
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  color: #646464;
+}
+
+.btns{
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+
+}
+.btn{
+  margin: 40px 0;
+  border-radius: 15px;
+  border: 1px solid #7274fd;
+  background-color: #7274fd;
+
+
+
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #f3f1fc;
+  padding: 10px 20px;
+
+}
+
+h1{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 28px;
+  color: #7274fd;
+  text-align: center;
+  letter-spacing: 1px;
+  margin: 20px 0;
+}
+
+  /* color: #7274fd;
+  color: #dfdbf2;
+  color: #b69cff; */
+p {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  color: #646464;
+  text-align: center;
+
+ 
+  margin: 0 0 20px 0;
+
+}
+
+label.checkbox{
+ 
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  color: #646464;
+  padding: 5px 0;
+
+}
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #7274fd;
+}
+.errorMessage {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  color: red;
+}
+
+.btn-active{
+  border: 1px solid #dfdbf2;
+  background-color: #dfdbf2;
+  color: #7274fd;
 }

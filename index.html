@@ -16,17 +16,23 @@
     <main class="main">
       <h1>Create account</h1>
       <div class="social-icons">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
+        <a href=""><img src="assets/images/facebook_social.ico" alt="facebook"></a>
+        <a href=""><img src="assets/images/instagram_social.ico" alt="instagram"></a>
+        <a href=""><img src="assets/images/telegram_socia.ico" alt="telegram"></a>
+        <a href=""><img src="assets/images/vk_social.ico" alt="vk"></a>
       </div>
       <p>or use email for registration</p>
       <form>
-        <input class="input" type="text" name="name" placeholder="Name">
-        <input class="input" type="text" name="lastName" id="Last Name">
-        <input class="input" type="text" name="email" placeholder="Email">
-        <select name="country" id="country" aria-placeholder="Country">
+        <input class="input" placeholder="Name" id="name" onmouseover="colorChangeName()" onmouseout="colorBackName()">
+        <div class="errorMessage" id="errorName"></div>
+        <input class="input" type="text" name="lastName" placeholder="Last Name" id="lastname"
+          onmouseover="colorChangeLastName()" onmouseout="colorBackLastName()">
+        <div class="errorMessage" id="errorLastName"></div>
+        <input class="input" type="text" name="email" placeholder="Email" autocomplete="username" id="email"
+          onmouseover="colorChangeEmail()" onmouseout="colorBackEmail()">
+        <div class="errorMessage" id="erroremail"></div>
+        <select name="country" id="country" onmouseover="colorChangeCountry()" onmouseout="colorBackCountry()">
+          <option value="Country">Country</option>
           <option value="Albania">Albania</option>
           <option value="Andorra">Andorra</option>
           <option value="Argentina">Argentina</option>
@@ -37,20 +43,24 @@
           <option value="Denmark">Denmark</option>
           <option value="Finland">Finland</option>
         </select>
-        <input class="input" type="password" name="password" placeholder="Password" id="">
-        <input class="input" type="checkbox" name="checkbox" id="checkbox">
-        <label class="input" for="checkbox">I agree to the <a href="">Terms</a> and <a href="">Privacy
+        <div class="errorMessage" id="errorCountry"></div>
+        <input class="input" type="password" name="password" placeholder="Password" autocomplete="current-password"
+          id="password" onmouseover="colorChangePassword()" onmouseout="colorBackPassword()">
+        <div class="errorMessage" id="errorpassword"></div>
+        <input class="input checkbox" type="checkbox" name="checkbox" id="checkbox">
+        <label class="input checkbox" for="checkbox">I agree to the <a href="">Terms</a> and <a href="">Privacy
             Policy</a>.</label>
-        <button class="btn btn_sign-up">Sign Up</button>
-        <button class="btn btn_sign-in">Sign In</button>
-
-
+        <div class="btns">
+          <button class="btn btn_sign-up" onmouseover="colorChangeBtnUp()" onmouseout="colorBackBtnUp()">Sign
+            Up</button>
+          <button class="btn btn_sign-in" onmouseover="colorChangeBtnIn()" onmouseout="colorBackBtnIn()">Sign
+            In</button>
+        </div>
       </form>
     </main>
     <div class="main-image"></div>
-
   </div>
-
+  <script src="script.js"></script>
 </body>
 
 </html>
