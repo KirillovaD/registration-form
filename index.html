@@ -23,15 +23,19 @@
       </div>
       <p>or use email for registration</p>
       <form>
-        <input class="input" placeholder="Name" id="name" onmouseover="colorChangeName()" onmouseout="colorBackName()">
+        <input class="input" placeholder="Name" name="name" id="name" onmouseover="changeColorInput()"
+          onmouseout="changeColorBackInput()">
         <div class="errorMessage" id="errorName"></div>
+
         <input class="input" type="text" name="lastName" placeholder="Last Name" id="lastname"
-          onmouseover="colorChangeLastName()" onmouseout="colorBackLastName()">
+          onmouseover="changeColorInput()" onmouseout="changeColorBackInput()">
         <div class="errorMessage" id="errorLastName"></div>
+
         <input class="input" type="text" name="email" placeholder="Email" autocomplete="username" id="email"
-          onmouseover="colorChangeEmail()" onmouseout="colorBackEmail()">
+          onmouseover="changeColorInput()" onmouseout="changeColorBackInput()">
         <div class="errorMessage" id="erroremail"></div>
-        <select name="country" id="country" onmouseover="colorChangeCountry()" onmouseout="colorBackCountry()">
+
+        <select name="country" id="country" onmouseover="changeColorInput()" onmouseout="changeColorBackInput()">
           <option value="Country">Country</option>
           <option value="Albania">Albania</option>
           <option value="Andorra">Andorra</option>
@@ -44,12 +48,15 @@
           <option value="Finland">Finland</option>
         </select>
         <div class="errorMessage" id="errorCountry"></div>
+
         <input class="input" type="password" name="password" placeholder="Password" autocomplete="current-password"
-          id="password" onmouseover="colorChangePassword()" onmouseout="colorBackPassword()">
+          id="password" onmouseover="changeColorInput()" onmouseout="changeColorBackInput()">
         <div class="errorMessage" id="errorpassword"></div>
+
         <input class="input checkbox" type="checkbox" name="checkbox" id="checkbox">
         <label class="input checkbox" for="checkbox">I agree to the <a href="">Terms</a> and <a href="">Privacy
             Policy</a>.</label>
+        <div class="errorMessage" id="errorcheckbox"></div>
         <div class="btns">
           <button class="btn btn_sign-up" onmouseover="colorChangeBtnUp()" onmouseout="colorBackBtnUp()">Sign
             Up</button>
